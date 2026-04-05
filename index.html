@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cloud Inventory Management</h1>
+
+<div class="container">
+
+    <h2>Add Product</h2>
+
+    <input id="name" placeholder="Product Name">
+    <input id="category" placeholder="Category">
+    <input id="price" placeholder="Price">
+    <input id="stock" placeholder="Stock">
+    <input id="threshold" placeholder="Threshold">
+
+    <button onclick="addProduct()">Add Product</button>
+
+</div>
+
+<div class="container">
+
+    <h2>Product Inventory</h2>
+
+    <button onclick="loadProducts()">Refresh Inventory</button>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Threshold</th>
+            </tr>
+        </thead>
+
+        <tbody id="productList">
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
